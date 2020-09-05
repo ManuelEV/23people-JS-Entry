@@ -1,12 +1,12 @@
 import React from "react";
 
-
+import "../../assets/css/calculator.css";
 
 
 //InputButtons => numbers, point and operators
-const InputButton = ({handleClick, input, style}) => {
+const InputButton = ({handleClick, input, buttonStyle}) => {
     return (
-    <button class={style} value={input} onClick={() => handleClick(input)}>
+    <button type="button" className={buttonStyle} value={input} onClick={() => handleClick(input)}>
         {input}
     </button>
     );
