@@ -102,8 +102,7 @@ html {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
-    height: 100%;/*222px;*/
-    /*60%;*/
+    height: 100%;
     grid-area: 2 / 4 / 5 / 5;
   }
   

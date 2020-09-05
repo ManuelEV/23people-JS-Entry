@@ -65,7 +65,9 @@ function Calculator() {
         <div className="calculator">
             <h1 className="calculator-header">Amazing calculator</h1>
             <h1 className="calculator-screen">
-                {initialValue} {input}
+                <bdi>
+                    {initialValue} {input}
+                </bdi>
             </h1>
             <div className="calculator-keys">
                 {
@@ -76,7 +78,7 @@ function Calculator() {
                         );
                     })
                 }
-                
+
                 {
                     //Add numbers buttons (including ".")
                     buttons.numberButtons.map((numberButton, index) => {
