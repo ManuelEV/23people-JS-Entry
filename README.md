@@ -1,2 +1,14 @@
 # 23people-JS-Entry
-Repositorio donde se aloja la solución de la prueba para JS Entry
+
+
+In the project directory (calculator folder), you can run:
+
+### `npm install`
+
+### `npm start`
+
+Command to run tests:
+
+### `npm test`
+
+

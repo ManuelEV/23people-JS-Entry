@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import "../assets/css/calculator.css";
+
 //import components
 import InputButton from './buttons/InputButton';
 
@@ -64,7 +64,7 @@ function Calculator() {
     return (
         <div className="calculator">
             <h1 className="calculator-header">Amazing calculator</h1>
-            <h1 className="calculator-screen">
+            <h1 className="calculator-screen" data-testid="screen">
                 <bdi>
                     {initialValue} {input}
                 </bdi>
@@ -74,7 +74,8 @@ function Calculator() {
                     //Add operators buttons
                     buttons.operatorButtons.map((operatorButton, index) => {
                         return (
-                            <InputButton buttonStyle="operator" key={index} input={operatorButton} handleClick={operatorButton => { concatenateInput(operatorButton) }} />
+                            <InputButton buttonStyle="operator" key={index} input={operatorButton}
+                            handleClick={operatorButton => { concatenateInput(operatorButton) }} />
                         );
                     })
                 }
@@ -83,7 +84,8 @@ function Calculator() {
                     //Add numbers buttons (including ".")
                     buttons.numberButtons.map((numberButton, index) => {
                         return (
-                            <InputButton key={index} input={numberButton} handleClick={numberButton => { concatenateInput(numberButton) }} />
+                            <InputButton key={index} input={numberButton}
+                            handleClick={numberButton => { concatenateInput(numberButton) }} />
                         );
                     })
                 }
